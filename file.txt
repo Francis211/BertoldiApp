@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 algo mas
+=======
+algo
+>>>>>>> 14a236ab0cfdcc38ff0d239f6f0955b2e6248d44
