@@ -2,9 +2,13 @@ require('./bootstrap');
 
 import { createApp } from 'vue';
 
-import HelloWorld from './components/welcome.vue';
+import router from './router'
+
+
 
 const app = createApp({})
 
-app.component('hello-world', HelloWorld);
+//Aca hacemos que vue utilize vue-router
+app.use(router);
+
 app.mount('#app');

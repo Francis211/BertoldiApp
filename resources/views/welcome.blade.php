@@ -21,27 +21,18 @@
         </style>
     </head>
     <body class="antialiased">
+   
+
+<div id="app">
+  <h1>Hello App!</h1>
+  <p><router-link to="/user">User</router-link></p>
+    <router-view></router-view>
+   {{-- archivo con la compilacion de los archivos js por laravel mix --}}
+   <script src="{{ mix('js/app.js') }}"></script>
         {{-- scripts para vue router --}}
-        <script src="https://unpkg.com/vue/dist/vue.js"></script>
-        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-        {{-- div al cual se enlaza vue --}}
-       <div id="app">
-            <div class="relative flex itemps-top justify-center min-h-screen bg-gray-100 sm:items-center py-4 sm:pt-0">
-                <hello-world/>
-            </div>
-            <h1>Hello App!</h1>
-            <p>
-              <!-- use router-link component for navigation. -->
-              <!-- specify the link by passing the `to` prop. -->
-              <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
-              <router-link to="/foo">Go to Foo</router-link>
-              <router-link to="/bar">Go to Bar</router-link>
-            </p>
-            <!-- route outlet -->
-            <!-- component matched by the route will render here -->
-            <router-view></router-view>
-       </div>
-       {{-- archivo con la compilacion de los archivos js por laravel mix --}}
-       <script src="{{ mix('js/app.js') }}"></script>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://unpkg.com/vue-router@4"></script>
+    </div>
+      
     </body>
 </html>
